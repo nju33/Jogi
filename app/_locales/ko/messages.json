@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Jogi",
+    "description": "ウェブストアで表示されるアプリ名"
+  },
+  "appDesc": {
+    "message": "옆 라인을 정돈하고 같은 시간에!",
+    "description": "ウェブストアで表示されるアプリの詳細説明"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Jogi",
+    "description": "ウェブストアで表示されるアプリ名"
+  },
+  "appDesc": {
+    "message": "Quand il est tel manque a établi une ligne horizontale!",
+    "description": "ウェブストアで表示されるアプリの詳細説明"
+  }
+}
