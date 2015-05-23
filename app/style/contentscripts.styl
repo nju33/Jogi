@@ -34,12 +34,14 @@ $common-pseudo
     @extend $common-pseudo
     top: 24px
     height: 10px
-    background: linear-gradient(left, transparent 47%, lighten(#bbb, 15) 47%, lighten(#bbb, 15) 50%, transparent 50%, transparent 97%, #bbb 97%) / 1cm
+    background: linear-gradient(left, transparent 47%, lighten(#bbb, 15) 47%, lighten(#bbb, 15) 50%, transparent 50%, transparent 97%, #bbb 97%)
+    background-size: 1cm
   &:after
     @extend $common-pseudo
     top: 18px
     height: 3px
-    background: radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center
+    background: radial-gradient(center, circle, #bbb 8%, transparent 8%)
+    background-position-x: 18px
     background-size: 1cm
 
 #jogi-cover

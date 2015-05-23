@@ -217,20 +217,24 @@ th {
 #jogi:before {
   top: 24px;
   height: 10px;
-  background: -webkit-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
-  background: -moz-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
-  background: -o-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
-  background: -ms-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
-  background: linear-gradient(to right, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
+  background: -webkit-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
+  background: -moz-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
+  background: -o-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
+  background: -ms-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
+  background: linear-gradient(to right, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
+  -webkit-background-size: 1cm;
+  -moz-background-size: 1cm;
+  background-size: 1cm;
 }
 #jogi:after {
   top: 18px;
   height: 3px;
-  background: -webkit-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
-  background: -moz-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
-  background: -o-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
-  background: -ms-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
-  background: radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
+  background: -webkit-radial-gradient(center, circle, #bbb 8%, transparent 8%);
+  background: -moz-radial-gradient(center, circle, #bbb 8%, transparent 8%);
+  background: -o-radial-gradient(center, circle, #bbb 8%, transparent 8%);
+  background: -ms-radial-gradient(center, circle, #bbb 8%, transparent 8%);
+  background: radial-gradient(center, circle, #bbb 8%, transparent 8%);
+  background-position: 18px 0;
   -webkit-background-size: 1cm;
   -moz-background-size: 1cm;
   background-size: 1cm;
