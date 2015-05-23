@@ -7,49 +7,42 @@
     opacity: 1
 
 #chrome-extension-jogi
-  position: absolute
-  left: 0
-  top: 0
   z-index: 99999999999
   height: 0
   animation: fade-in .25s linear
 
+$common-jogi
+  position: fixed
+  left: 0
+  top: 0
+  width: 100vw
+  cursor: move
+$common-pseudo
+  content: ""
+  position: absolute
+  display: block
+  width: inherit
+
 #jogi
   &
-    position: fixed
-    left: 0
-    top: 0
-    width: 100vw
+    @extend $common-jogi
     height: 34px
     border: 1px solid rgba(0,0,0,0.1)
     background: rgba(255,255,255, .95) linear-gradient(top, transparent 21px, rgba(0,0,0,.21) 21px, rgba(0,0,0,.21) 22px, rgba(0,0,0,.05) 22px, rgba(0,0,0,.05) 24px, transparent 24px)
     box-shadow: 0px 4px 5px -4px rgba(0,0,0,0.4), 0 0 3px -1px rgba(0,0,0,0.4)
-    cursor: move
   &:before
-    content: ""
-    position: absolute
+    @extend $common-pseudo
     top: 24px
-    display: block
-    width: inherit
     height: 10px
-    background: linear-gradient(left, transparent 47%, lighten(#bbb, 15) 47%, lighten(#bbb, 15) 50%, transparent 50%, transparent 97%, #bbb 97%)
-    background-size: 1cm
+    background: linear-gradient(left, transparent 47%, lighten(#bbb, 15) 47%, lighten(#bbb, 15) 50%, transparent 50%, transparent 97%, #bbb 97%) / 1cm
   &:after
-    content: ""
-    position: absolute
+    @extend $common-pseudo
     top: 18px
-    display: block
-    width: inherit
     height: 3px
-    background: radial-gradient(center, circle, #bbb 8%, transparent 8%)
+    background: radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center
     background-size: 1cm
-    background-position-x: 18px
 
 #jogi-cover
-  position: fixed
-  left: 0
-  top: 0
+  @extend $common-jogi
   display: none
-  width: 100vw
   height: 100vh
-  cursor: move

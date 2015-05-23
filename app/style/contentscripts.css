@@ -181,9 +181,6 @@ th {
 }
 @charset "utf-8";
 #chrome-extension-jogi {
-  position: absolute;
-  left: 0;
-  top: 0;
   z-index: 99999999999;
   height: 0;
   -webkit-animation: fade-in 0.25s linear;
@@ -192,11 +189,22 @@ th {
   -ms-animation: fade-in 0.25s linear;
   animation: fade-in 0.25s linear;
 }
-#jogi {
+#jogi,
+#jogi-cover {
   position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
+  cursor: move;
+}
+#jogi:before,
+#jogi:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: inherit;
+}
+#jogi {
   height: 34px;
   border: 1px solid rgba(0,0,0,0.1);
   background: rgba(255,255,255,0.95) -webkit-linear-gradient(top, transparent 21px, rgba(0,0,0,0.21) 21px, rgba(0,0,0,0.21) 22px, rgba(0,0,0,0.05) 22px, rgba(0,0,0,0.05) 24px, transparent 24px);
@@ -205,49 +213,31 @@ th {
   background: rgba(255,255,255,0.95) -ms-linear-gradient(top, transparent 21px, rgba(0,0,0,0.21) 21px, rgba(0,0,0,0.21) 22px, rgba(0,0,0,0.05) 22px, rgba(0,0,0,0.05) 24px, transparent 24px);
   background: rgba(255,255,255,0.95) linear-gradient(to bottom, transparent 21px, rgba(0,0,0,0.21) 21px, rgba(0,0,0,0.21) 22px, rgba(0,0,0,0.05) 22px, rgba(0,0,0,0.05) 24px, transparent 24px);
   box-shadow: 0px 4px 5px -4px rgba(0,0,0,0.4), 0 0 3px -1px rgba(0,0,0,0.4);
-  cursor: move;
 }
 #jogi:before {
-  content: "";
-  position: absolute;
   top: 24px;
-  display: block;
-  width: inherit;
   height: 10px;
-  background: -webkit-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
-  background: -moz-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
-  background: -o-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
-  background: -ms-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
-  background: linear-gradient(to right, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%);
-  -webkit-background-size: 1cm;
-  -moz-background-size: 1cm;
-  background-size: 1cm;
+  background: -webkit-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
+  background: -moz-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
+  background: -o-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
+  background: -ms-linear-gradient(left, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
+  background: linear-gradient(to right, transparent 47%, #e1e1e1 47%, #e1e1e1 50%, transparent 50%, transparent 97%, #bbb 97%)/1cm;
 }
 #jogi:after {
-  content: "";
-  position: absolute;
   top: 18px;
-  display: block;
-  width: inherit;
   height: 3px;
-  background: -webkit-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: -moz-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: -o-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: -ms-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: radial-gradient(center, circle, #bbb 8%, transparent 8%);
+  background: -webkit-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
+  background: -moz-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
+  background: -o-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
+  background: -ms-radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
+  background: radial-gradient(center, circle, #bbb 8%, transparent 8%) 18px center;
   -webkit-background-size: 1cm;
   -moz-background-size: 1cm;
   background-size: 1cm;
-  background-position: 18px 0;
 }
 #jogi-cover {
-  position: fixed;
-  left: 0;
-  top: 0;
   display: none;
-  width: 100vw;
   height: 100vh;
-  cursor: move;
 }
 @-moz-keyframes fade-in {
   from {
