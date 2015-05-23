@@ -18,7 +18,6 @@
     var cover, elem, endEvent, flags, jogi, move, promise, rotate, startEvent, sumDeg, wrapper;
     if (req.emit === 'jogi:has') {
       elem = document.getElementById('chrome-extension-jogi');
-      console.log(elem != null);
       return r.sendMessage({
         hasElem: elem != null
       }, function() {});

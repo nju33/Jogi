@@ -9,7 +9,6 @@ createElem = (elem, id, parent) ->
 r.onMessage.addListener (req) ->
   if req.emit is 'jogi:has'
     elem = document.getElementById 'chrome-extension-jogi'
-    console.log elem?
     r.sendMessage {hasElem: elem?}, ->
 
   else if req.emit is 'jogi:create'
