@@ -7,6 +7,7 @@
     opacity: 1
 
 #chrome-extension-jogi
+  position: relative
   z-index: 99999999999
   height: 0
   animation: fade-in .25s linear
@@ -40,9 +41,9 @@ $common-pseudo
     @extend $common-pseudo
     top: 18px
     height: 3px
-    background: radial-gradient(center, circle, #bbb 8%, transparent 8%)
-    background-position-x: 18px
+    background-image: -webkit-radial-gradient(50% 50%, circle cover, rgb(187, 187, 187) 8%, transparent 8%)
     background-size: 1cm
+    background-position-x: 18px
 
 #jogi-cover
   @extend $common-jogi

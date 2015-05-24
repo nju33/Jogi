@@ -181,6 +181,7 @@ th {
 }
 @charset "utf-8";
 #chrome-extension-jogi {
+  position: relative;
   z-index: 99999999999;
   height: 0;
   -webkit-animation: fade-in 0.25s linear;
@@ -229,15 +230,15 @@ th {
 #jogi:after {
   top: 18px;
   height: 3px;
-  background: -webkit-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: -moz-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: -o-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: -ms-radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background: radial-gradient(center, circle, #bbb 8%, transparent 8%);
-  background-position: 18px 0;
+  background-image: -webkit--webkit-radial-gradient(50% 50%, circle cover, #bbb 8%, transparent 8%);
+  background-image: -webkit--moz-radial-gradient(50% 50%, circle cover, #bbb 8%, transparent 8%);
+  background-image: -webkit--o-radial-gradient(50% 50%, circle cover, #bbb 8%, transparent 8%);
+  background-image: -webkit--ms-radial-gradient(50% 50%, circle cover, #bbb 8%, transparent 8%);
+  background-image: -webkit-radial-gradient(50% 50%, circle cover, #bbb 8%, transparent 8%);
   -webkit-background-size: 1cm;
   -moz-background-size: 1cm;
   background-size: 1cm;
+  background-position: 18px 0;
 }
 #jogi-cover {
   display: none;
